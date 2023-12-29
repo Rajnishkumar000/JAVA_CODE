@@ -2,7 +2,7 @@ package MyPracticeCode;
 
 import java.util.Locale;
 import java.util.Scanner;
-  
+
 public class Anagram {
 
 //    static boolean isAnagram(String a, String b) {

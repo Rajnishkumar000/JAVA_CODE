@@ -23,7 +23,7 @@ public class numberPermutation
         return;
     }
     public static void main(String[] args) {
-        int[] arr={1,2};
+        int[] arr={1,2,3};
         permutation(arr, 0, arr.length);
     }
 

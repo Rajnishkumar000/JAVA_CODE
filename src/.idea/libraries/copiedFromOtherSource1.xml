@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="copiedFromOtherSource1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/copiedFromOtherSource/placement_series-main.zip!/" />
+      <root url="jar://$PROJECT_DIR$/copiedFromOtherSource/masterInjava.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,54 +1,49 @@
 package CN_project;
 
-// A Java program for a Client
 import java.io.*;
 import java.net.*;
-import java.util.*;
+import java.util.Scanner;
 
 public class Client {
     private Socket s = null;
-    public Client(String address, int port)
-    {
 
+    public Client(String address, int port) {
         try {
-            // In this Code Input Getting from a user
             Scanner sc = new Scanner(System.in);
             s = new Socket(address, port);
             System.out.println("Connected");
 
-            // Create two objects first is dis and dos for
-            // input and output
-            DataInputStream dis
-                    = new DataInputStream(s.getInputStream());
-            DataOutputStream dos
-                    = new DataOutputStream(s.getOutputStream());
+            DataInputStream dis = new DataInputStream(s.getInputStream());
+            DataOutputStream dos = new DataOutputStream(s.getOutputStream());
 
-            // Making a Loop
             while (true) {
-                System.out.println(
-                        "Enter the operation in the form operand operator operand");
-                System.out.println("Example 3 + 5 ");
-                String inp = sc.nextLine();
+                System.out.println("Enter the expression:");
+                System.out.println("Example: 3 + 5, sqrt(16) + sin(30)");
 
-                // Check the user input if user enter over
-                // then
-                // connect is stopped by server and user
-                if (inp.equals("Over"))
+                String expression = sc.nextLine();
+
+                if (expression.equalsIgnoreCase("Over"))
                     break;
-                dos.writeUTF(inp);
 
-                String ans = dis.readUTF();
-                System.out.println("Answer = " + ans);
+                dos.writeUTF(expression);
+
+                String result = dis.readUTF();
+                System.out.println("Result: " + result);
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("Error in Connection");
+        } finally {
+            try {
+                if (s != null) {
+                    s.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
-    public static void main(String args[])
-    {
-        // Connection With Server port 5000
+    public static void main(String args[]) {
         Client client = new Client("127.0.0.1", 5000);
     }
 }

@@ -1,5 +1,4 @@
 package CN_project;
-
 import java.io.*;
 import java.net.*;
 import java.util.Scanner;
@@ -30,7 +29,8 @@ public class Client {
                 String result = dis.readUTF();
                 System.out.println("Result: " + result);
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             System.out.println("Error in Connection");
         } finally {
             try {

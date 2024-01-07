@@ -1,32 +1,22 @@
 package CN_project;
-
 import java.io.*;
 import java.net.*;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.DoubleUnaryOperator;
-
 import static CN_project.Server.functions;
-
-
 class Parser {
     private String[] tokens;
     private int index;
-
-
     public Parser(String[] tokens) {
         this.tokens = tokens;
         this.index = 0;
     }
-
     public double parse() {
         return parseAddSub();
     }
-
     private double parseAddSub() {
         double leftResult = parseMulDiv();
-
         while (index < tokens.length && (tokens[index].equals("+") || tokens[index].equals("-"))) {
             String operator = tokens[index];
             index++;
@@ -39,7 +29,6 @@ class Parser {
                 leftResult -= rightResult;
             }
         }
-
         return leftResult;
     }
 

@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Client {
     private Socket s = null;
 
-    public Client(String address, int port) {
+    private Client(String address, int port) {
         try {
             Scanner sc = new Scanner(System.in);
             s = new Socket(address, port);

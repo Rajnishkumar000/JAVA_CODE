@@ -19,7 +19,7 @@ public class subString
     {
         Scanner in=new Scanner(System.in);
         String str = in.nextLine();
-        System.out.println("The input string is " + str);
+        System.out.println("The input.txt string is " + str);
 
         int len = lengthOfLongestSubstring(str);
 

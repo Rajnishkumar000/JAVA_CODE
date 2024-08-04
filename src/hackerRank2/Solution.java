@@ -9,7 +9,7 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner ob=new Scanner(System.in);
-        int n=ob.nextInt();//ye input ye batata hai ki aap kitna baar ye test krna chahte hai by taking the input
+        int n=ob.nextInt();//ye input.txt ye batata hai ki aap kitna baar ye test krna chahte hai by taking the input.txt
 
         int c=0;
         for(int i=0;i<n;i++){

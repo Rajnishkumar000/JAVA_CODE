@@ -8,7 +8,7 @@ import java.util.Scanner;
             Scanner sc = new Scanner(System.in);
             // java.util.Scanner sc = new java.util.Scanner(System.in);
             int a = sc.nextInt();
-            System.out.println("This is my scanner taking input as " + a);
+            System.out.println("This is my scanner taking input.txt as " + a);
         }
     }
 

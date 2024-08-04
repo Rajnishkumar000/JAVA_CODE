@@ -36,7 +36,7 @@ public class cwh_70 {
 //    Creating a Thread by Extending Thread class
 //Multithreading In Java :
 //        Used to maximize the CPU utilization.
-//        We don't want our CPU to be in a free state; for example, Func1() comes into the memory and demands any input/output process. The CPU will need to wait for unit Func1() to complete its input/output operation in such a condition. But, while Func1() completes its I/O operation, the CPU is free and not executing any thread. So, the efficiency of the CPU is decreased in the absence of multithreading.
+//        We don't want our CPU to be in a free state; for example, Func1() comes into the memory and demands any input.txt/output process. The CPU will need to wait for unit Func1() to complete its input.txt/output operation in such a condition. But, while Func1() completes its I/O operation, the CPU is free and not executing any thread. So, the efficiency of the CPU is decreased in the absence of multithreading.
 //        In the case of multithreading, if a thread demands any I/O operation, then the CPU will let the thread perform its I/O operation, but it will start the execution of a new thread parallelly. So, in this case, two threads are executing at the same time.
 //        Flow Of Control In Java :
 //        Without threading :

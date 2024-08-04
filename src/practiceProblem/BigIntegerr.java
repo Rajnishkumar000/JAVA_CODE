@@ -16,6 +16,6 @@ import java.util.regex.*;
 
             System.out.println(a.add(b));
             System.out.println(a.multiply(b));
-            /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+            /* Enter your code here. Read input.txt from STDIN. Print output to STDOUT. Your class should be named Solution. */
         }
     }

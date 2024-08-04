@@ -47,7 +47,7 @@ class GFG{
     public static void main(String[] args)
     {
         String str = "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaccccccccccccc";
-        System.out.println("The input string is " + str);
+        System.out.println("The input.txt string is " + str);
 
         int len = longestUniqueSubsttr(str);
 

@@ -16,7 +16,7 @@ public class LinkedHashMapss
 		hmap.put(50, null);
 		hmap.put(10, "A");
 		System.out.println(hmap);
-		//gives output same as given input order
+		//gives output same as given input.txt order
 		
 
 }

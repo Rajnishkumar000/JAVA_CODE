@@ -58,7 +58,7 @@ public class Strings {
 
 
 //Homework Problems
-//Take an array of Strings input from the user & find the cumulative (combined) length of all those strings.
+//Take an array of Strings input.txt from the user & find the cumulative (combined) length of all those strings.
 
 
  class StringlengthArray {

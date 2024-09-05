@@ -14,6 +14,7 @@ public class targetsumSubArray {
 
         return dp[sum];
     }
+    int s;
 
     public static void main(String[] args) {
         int[] arr = {3,2,1,1};

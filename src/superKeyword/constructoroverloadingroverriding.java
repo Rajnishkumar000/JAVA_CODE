@@ -1,9 +1,9 @@
 package superKeyword;
 class car
 {
-    car()
+    car(int x)
     {
-        System.out.println("This is car class constructor");
+        System.out.println("This is car class constructor"+x);
     }
     void dis()
     {
@@ -15,8 +15,14 @@ class lambo extends car
 
    lambo()
    {
-       super.dis();
+
+       //super(); yaha ye cheez chupa hua rahta hai
+       super(5);//aisa kar ke override kar sakte hai
+
+
        System.out.println("This is lambo class constructor");
+       super.dis();//ya kaam karega
+
    }
     void dis()
     {
@@ -33,8 +39,13 @@ public class constructoroverloadingroverriding
         l.dis();
         System.out.println();
 
-        car c=new car();
+        car c=new car(6);
         c.dis();
+        System.out.println();
+
+        car c1=new lambo();
+        c1.dis();
+
 
 
     }
